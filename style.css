@@ -32,15 +32,18 @@ body{
 .tiktok .content-1{
     background: skyblue;
     position: relative;
-    right: 190px;
-    top: -50px;
-    width: 300px;
+    right: 100px;
+    top: -115px;
+    width: 200px;
+    height: 200px;
     padding: 35px;
-    border: 0px;
-    border-radius: 6px; 
-    transform: rotate(-10deg);
+    border-radius: 180px 10px 10px 10px;
+    border: 0;
     clip-path: circle(0% at 100% 100%);
     transition: 0.5s;
+}
+.tiktok .text-1{
+    transform: rotate(-10deg);
 }
 .tiktok i{
     position: relative;
@@ -50,6 +53,7 @@ body{
 .tiktok:hover{
 
     background: skyblue;
+    scale: 1.1;
 
     
 }
