@@ -67,8 +67,48 @@
         </div>
         
         
-        <div class="circle"></div>
-    </div>
+        <div class="circle">
+
+            <div class="follow rotate">
+
+       
+
+            <div class="cirsors cirsor "></div>
+    
+            <div class="half-circle cirsor "></div>
+
+            <div class="mini-circle cirsor "></div>
+
+        </div>
+
+        </div>
    
+    </div>
+
+    <script>
+        // เลือกองค์ประกอบที่ต้องการให้หมุน
+        const rotateElement = document.querySelector('.rotate');
+
+        // เพิ่มเหตุการณ์เมาส์
+        document.addEventListener('mousemove', (event) => {
+            // คำนวณมุมของการหมุนโดยใช้ตำแหน่งของเมาส์
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+            const angle = Math.atan2(mouseY - centerY, mouseX - centerX) * (180 / Math.PI);
+
+            // ใช้มุมที่คำนวณได้ในการหมุน
+            rotateElement.style.transform = `rotate(${angle}deg)`;
+        });
+    </script>
+
+
+    
 </body>
+
+
+
+
+
 </html>

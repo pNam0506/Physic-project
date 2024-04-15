@@ -312,30 +312,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .circle{
     width: 150px;
     height: 150px;
@@ -346,3 +322,52 @@ body{
     position: relative;
     top: -40px;
 }
+
+.follow{
+  position: relative;
+  top: 35px;
+ /*background: black;*/
+  
+}
+
+.cirsors{
+
+  width: 70px; /* ปรับขนาดตามต้องการ */
+  height: 35px; /* ครึ่งของความสูงของวงกลม */
+  border-radius: 100px 100px 0 0;
+  background: black;
+  position: relative;
+  left: 20px;
+  top: 22px;
+  transform: rotate(270deg);
+
+}
+.half-circle {
+  width: 40px; /* ปรับขนาดตามต้องการ */
+  height: 25px; /* ครึ่งของความสูงของวงกลม */
+  border-radius: 100px 100px 0 0; /* ตัวรูปร่างของครึ่งวงกลม */
+  background-color: #00A3FF; /* สีพื้นหลัง */
+  position: relative;
+  left: 70px;
+  top: -9px;
+  transform: rotate(90deg);
+
+}
+.mini-circle{
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  background: wheat;
+  border-radius: 90px;
+  position: relative;
+  top: -31px;
+  left: 66px;
+
+ 
+}
+.rotate{
+ 
+}
+
+
