@@ -26,6 +26,9 @@
                 <div class="button-container">
                   <button class="back-button" onclick="goBack()"></button>
               </div>
+              <button class="scroll-button scroll-down" onclick="scrollToContent('down')">เลื่อนลง</button>
+              <button class="scroll-button scroll-up" onclick="scrollToContent('up')">เลื่อนขึ้น</button>
+
                 <script>
                   function showImage(imageSrc1, imageSrc2) {
                     const imageElement1 = document.getElementById('displayedImage1');
@@ -36,6 +39,14 @@
                   function goBack() {
                     window.history.back();
                   }
+                  function scrollToContent(direction) {
+            const scrollAmount = window.innerHeight;
+            const scrollOptions = {
+                top: direction === 'down' ? scrollAmount : -scrollAmount,
+                behavior: 'smooth'
+            };
+            window.scrollBy(scrollOptions);
+        }
                 </script>
        </div>
         

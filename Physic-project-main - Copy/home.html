@@ -14,10 +14,10 @@
         <h1 id="main-title">Moment Of Inertia</h1>
         <h2 id="sub-title">นิยามของโมเมนต์เฉื่อย</h2>
         <h3 id="content-1"> ตำแหน่งของ centroid ของพื้นที่จะหาได้โดยการพิจารณา first moment ของพื้นที่รอบแกนใดแกนหนึ่ง<br> 
-            ซึ่งเป็นการหา integral ที่อยู่ในรูป \int xdA ในบทนี้ เราจะนิยามคำของ integral ของพื้นที่รอบแกนใดแกนหนึ่ง<br>
-            ซึ่งอยู่ในรูป \int x^2dA จะถูกเรียกว่า moment of inertia ของพื้นที่ </h3>
+            ซึ่งเป็นการหา integral ที่อยู่ในรูป ∫xdA ในบทนี้ เราจะนิยามคำของ integral ของพื้นที่รอบแกนใดแกนหนึ่ง<br>
+            ซึ่งอยู่ในรูป ∫x^2dA จะถูกเรียกว่า moment of inertia ของพื้นที่ </h3>
         
-            <div class="button-container">
+            <div class="image-container">
                 <button class="nav-button" onclick="location.href='page1.html'"> Moment of Inertia </button>
                 <button class="nav-button" onclick="location.href='page2.html'"> Parallei Axis Theorem for an Area </button>
                 <button class="nav-button" onclick="location.href='page3.html'"> Radius of Gyration of an Area </button>
@@ -31,7 +31,8 @@
     
     <div class="Vector-l"></div>
     <div class="Vector-r"></div>
-
+    
+    
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const header = document.getElementById("main-title");
@@ -45,6 +46,7 @@
                 header.appendChild(span);
             }
         });
+
 
         function goBack() {
             window.history.back();
