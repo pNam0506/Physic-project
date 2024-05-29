@@ -213,7 +213,10 @@ body{
 .tiktok-4 .content-4{
   background: greenyellow;
     position: relative;
-
+    font-family: "Dancing Script", cursive;
+    font-weight: 1500;
+    font-style: normal;
+    font-size: x-large;
     top: -25px;
     width: 200px;
     height: 200px;
