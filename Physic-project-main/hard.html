@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Chart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="tiktok">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            
+                <a href="home.html"><button class="content-1">
+                    <div class="text-1">  
+                        <h2>Hello!</h2>
+                        <p>Nice to meet you guys 1!</p>
+                    </div>
+                  
+                </button></a>
+            
+        </div>
+        <div class="tiktok-2">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+            <a href="home.html"><button class="content-2">
+                <div class="text-2">  
+            <h2>Hello!</h2>
+            <p>Nice to meet you guys 2!</p>
+        </div>
+        </button></a>
+        </div>
+        
+        
+        <div class="tiktok-3">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="home.html"><button class="content-3">
+                <div class="text-3">
+            <h2>Hello!</h2>
+            <p>Nice to meet you guys 3!</p>
+        </div>
+    </button></a>
+        </div>
+        
+        
+        <div class="tiktok-4">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="home.html"><button class="content-4">
+                <div class="text-4">
+            <h2>Hello!</h2>
+            <p>Nice to meet you guys 4!</p>
+        </div>
+    </button></a>
+        </div>
+        
+        
+        <div class="tiktok-5">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="home.html"><button class="content-5">
+                <div class="text-5">
+            <h2>Hello!</h2>
+            <p>Nice to meet you guys 5!</p>
+        </div>
+    </button></a>
+        </div>
+        
+        
+        <div class="circle">
+
+            <div class="follow rotate">
+
+       
+
+            <div class="cirsors cirsor "></div>
+    
+            <div class="half-circle cirsor "></div>
+
+            <div class="mini-circle cirsor "></div>
+
+        </div>
+
+        </div>
+   
+    </div>
+
+    <script>
+        // เลือกองค์ประกอบที่ต้องการให้หมุน
+        const rotateElement = document.querySelector('.rotate');
+
+        // เพิ่มเหตุการณ์เมาส์
+        document.addEventListener('mousemove', (event) => {
+            // คำนวณมุมของการหมุนโดยใช้ตำแหน่งของเมาส์
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+            const angle = Math.atan2(mouseY - centerY, mouseX - centerX) * (180 / Math.PI);
+
+            // ใช้มุมที่คำนวณได้ในการหมุน
+            rotateElement.style.transform = `rotate(${angle}deg)`;
+        });
+    </script>
+
+
+    
+</body>
+
+
+
+
+
+</html>

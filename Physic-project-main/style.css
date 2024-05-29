@@ -1,0 +1,373 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+}
+
+.container{
+
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+
+
+
+.tiktok{
+    width: 100px;
+  height: 100px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  transform: rotate(10deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition:  cubic-bezier(0.73, -0.18, 0.02, 1.46);
+  position: relative;
+  top: -10px;
+  left: 60px;
+}
+.tiktok .content-1{
+    background: skyblue;
+    position: relative;
+    right: 100px;
+    top: -115px;
+    width: 200px;
+    height: 200px;
+    padding: 35px;
+    border-radius: 180px 10px 10px 10px;
+    border: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition:  cubic-bezier(0.73, -0.18, 0.02, 1.46);
+    clip-path: circle(0% at 100% 100%);
+    transition: 0.5s;
+}
+.tiktok .text-1{
+    transform: rotate(-10deg);
+}
+.tiktok i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-20deg);
+}
+.tiktok:hover{
+
+    background: skyblue;
+    scale: 1.1;
+
+    
+}
+.tiktok:hover .content-1{
+    clip-path: circle(145% at 100% 0);
+}
+
+.tiktok-2{
+    width: 100px;
+  height: 100px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  transform: rotate(-10deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 300ms cubic-bezier(0.76, -0.19, 0.15, 1.17);
+  grid-column-start: 3;
+
+  position: relative;
+  top: -10px;
+  right: 7px;
+  
+
+}
+.tiktok-2 .content-2{
+  background: plum;
+    position: relative;
+    right: 7px;
+    top: -115px;
+    width: 200px;
+    height: 200px;
+    padding: 35px; border-radius: 10px 180px 10px 10px;
+    border: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 300ms cubic-bezier(0.76, -0.19, 0.15, 1.17);
+    clip-path: circle(0% at 0 100%);
+    transition: 0.5s;
+}
+.tiktok-2:hover{
+
+  background: plum;
+  scale: 1.1;
+
+  
+}
+.tiktok-2:hover .content-2{
+  clip-path: circle(145% at 100% 0);
+}
+
+.tiktok-2 .text-2{
+  transform: rotate(10deg);}
+
+
+  .tiktok-2 i{
+    position: relative;
+    top: 50%;
+    left: 40%;
+}
+
+
+
+
+
+.tiktok-3{
+    width: 100px;
+  height: 100px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 
+  5px 5px 5px 90px;
+  transform: rotate(-120deg);
+  box-shadow: 
+  rgba(50, 50, 93, 0.25) 
+  0px 2px 5px -1px, 
+  rgba(0, 0, 0, 0.3) 
+  0px 1px 3px -1px;
+  transition: 300ms 
+  cubic-bezier(0.72, 
+  -0.26, 0.02, 1.46);
+    grid-row-start: 2;
+    grid-column-start: 3;
+    position: relative;
+  top: 15px;
+  left: 35px;
+    
+  /*position: relative;
+  top: -80px;*/
+
+}
+
+.tiktok-3 .content-3{
+  background : yellow;
+    position: relative;
+    left:-100px;
+    top: -25px;
+    width: 200px;
+    height: 200px;
+    padding: 35px; 
+    border-radius: 10px 10px 10px 180px;
+    border: 0;
+    box-shadow: 
+  rgba(50, 50, 93, 0.25) 
+  0px 2px 5px -1px, 
+  rgba(0, 0, 0, 0.3) 
+  0px 1px 3px -1px;
+  transition: 300ms 
+  cubic-bezier(0.72, 
+  -0.26, 0.02, 1.46);
+    clip-path: circle(0% at 100% 0);
+    transition: 0.5s;
+}
+.tiktok-3:hover{
+
+  background: yellow;
+  scale: 1.1;
+
+  
+}
+.tiktok-3:hover .content-3{
+  clip-path: circle(145% at 100% 0);
+}
+
+.tiktok-3 .text-3{
+  transform: rotate(120deg);}
+
+
+  .tiktok-3 i{
+    position: relative;
+    top: 40%;
+    left:50%;
+    transform: rotate(120deg);
+}
+
+
+
+.tiktok-4{
+    width: 100px;
+  height: 100px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  transform: rotate(120deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 300ms cubic-bezier(1, -0.31, 0.02, 1.46);
+  grid-row-start: 2;
+  position: relative;
+  top: 15px;
+ left: 20px;
+}
+
+.tiktok-4 .content-4{
+  background: greenyellow;
+    position: relative;
+
+    top: -25px;
+    width: 200px;
+    height: 200px;
+    padding: 35px; 
+    border-radius: 10px 10px 180px 10px;
+    border: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 300ms cubic-bezier(1, -0.31, 0.02, 1.46);
+    clip-path: circle(0% at 0% 10% );
+    transition: 0.5s;
+}
+.tiktok-4:hover{
+
+  background: greenyellow;
+  scale: 1.1;
+
+  
+}
+.tiktok-4:hover .content-4{
+  clip-path: circle(145% at 100% 0);
+}
+
+.tiktok-4 .text-4{
+  transform: rotate(-120deg);}
+
+
+  .tiktok-4 i{
+    position: relative;
+    top: 40%;
+    left:50%;
+    transform: rotate(-120deg);
+}
+
+
+
+
+
+
+.tiktok-5{
+    width: 100px;
+  height: 100px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  transform: rotate(45deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 300ms cubic-bezier(1, -0.31, 0.02, 1.46);
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+  left: 30px;
+  /*position: relative;
+  left: 100px;
+  top: -170px;*/
+}
+
+.tiktok-5 .content-5{
+  background: pink;
+    position: relative;
+    top: -20px;
+    width: 200px;
+    height: 200px;
+    padding: 35px; 
+    border-radius: 10px 10px 180px 10px;
+    border: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 300ms cubic-bezier(1, -0.31, 0.02, 1.46);
+    clip-path: circle(0% at 0% 10% );
+    transition: 0.5s;
+}
+.tiktok-5:hover{
+
+  background: pink;
+  scale: 1.1;
+
+  
+}
+.tiktok-5:hover .content-5{
+  clip-path: circle(145% at 100% 0);
+}
+
+.tiktok-5 .text-5{
+  transform: rotate(-45deg);}
+
+
+  .tiktok-5 i{
+    position: relative;
+    top: 40%;
+    left:50%;
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+.circle{
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: wheat;
+    border-radius: 90px;
+    position: relative;
+    top: -40px;
+}
+
+.follow{
+  position: relative;
+  top: 35px;
+ /*background: black;*/
+  
+}
+
+.cirsors{
+
+  width: 70px; /* ปรับขนาดตามต้องการ */
+  height: 35px; /* ครึ่งของความสูงของวงกลม */
+  border-radius: 100px 100px 0 0;
+  background: black;
+  position: relative;
+  left: 20px;
+  top: 22px;
+  transform: rotate(270deg);
+
+}
+.half-circle {
+  width: 40px; /* ปรับขนาดตามต้องการ */
+  height: 25px; /* ครึ่งของความสูงของวงกลม */
+  border-radius: 100px 100px 0 0; /* ตัวรูปร่างของครึ่งวงกลม */
+  background-color: #00A3FF; /* สีพื้นหลัง */
+  position: relative;
+  left: 70px;
+  top: -9px;
+  transform: rotate(90deg);
+
+}
+.mini-circle{
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  background: wheat;
+  border-radius: 90px;
+  position: relative;
+  top: -31px;
+  left: 66px;
+
+ 
+}
+.rotate{
+ 
+}
+
+
