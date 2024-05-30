@@ -1,9 +1,22 @@
 body{
     min-height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
-    background: wheat;
+    display: flex;
+
+}
+
+.first {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 1000;
+  font-size: 3em; /* ขนาดตัวอักษร */
+  margin: 0.5em 0; /* เพิ่ม margin เพื่อให้มีพื้นที่ว่าง */
+  margin-left: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: bounce 2s infinite; /* เพิ่ม animation สำหรับการเด้ง */
+  
 }
 
 .container{
@@ -20,17 +33,17 @@ body{
   height: 100px;
   outline: none;
   border: none;
-  background: white;
+  background: #000000;
   border-radius: 90px 5px 5px 5px;
   transform: rotate(10deg);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: #32325d40 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition:  cubic-bezier(0.73, -0.18, 0.02, 1.46);
   position: relative;
   top: -10px;
   left: 60px;
 }
 .tiktok .content-1{
-    background: skyblue;
+    background: #00A3FF;
     position: relative;
     right: 100px;
     top: -115px;
@@ -55,7 +68,7 @@ body{
 }
 .tiktok:hover{
 
-    background: skyblue;
+    background: #00A3FF;
     scale: 1.1;
 
     
@@ -69,7 +82,7 @@ body{
   height: 100px;
   outline: none;
   border: none;
-  background: white;
+  background: black;
   border-radius: 5px 90px 5px 5px;
   transform: rotate(-10deg);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -83,7 +96,7 @@ body{
 
 }
 .tiktok-2 .content-2{
-  background: plum;
+  background: #D00000;
     position: relative;
     right: 7px;
     top: -115px;
@@ -98,7 +111,7 @@ body{
 }
 .tiktok-2:hover{
 
-  background: plum;
+  background: #D00000;
   scale: 1.1;
 
   
@@ -126,7 +139,7 @@ body{
   height: 100px;
   outline: none;
   border: none;
-  background: white;
+  background: black;
   border-radius: 
   5px 5px 5px 90px;
   transform: rotate(-120deg);
@@ -150,7 +163,7 @@ body{
 }
 
 .tiktok-3 .content-3{
-  background : yellow;
+  background : #299E00;
     position: relative;
     left:-100px;
     top: -25px;
@@ -172,7 +185,7 @@ body{
 }
 .tiktok-3:hover{
 
-  background: yellow;
+  background: #299E00;
   scale: 1.1;
 
   
@@ -199,7 +212,7 @@ body{
   height: 100px;
   outline: none;
   border: none;
-  background: white;
+  background: black;
   border-radius: 5px 5px 90px 5px;
   transform: rotate(120deg);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -211,9 +224,12 @@ body{
 }
 
 .tiktok-4 .content-4{
-  background: greenyellow;
+  background: #EE7200;
     position: relative;
-
+    font-family: "Dancing Script", cursive;
+    font-weight: 1500;
+    font-style: normal;
+    font-size: x-large;
     top: -25px;
     width: 200px;
     height: 200px;
@@ -227,7 +243,7 @@ body{
 }
 .tiktok-4:hover{
 
-  background: greenyellow;
+  background: #EE7200;
   scale: 1.1;
 
   
@@ -273,7 +289,7 @@ body{
 }
 
 .tiktok-5 .content-5{
-  background: pink;
+  background: #EE7200;
     position: relative;
     top: -20px;
     width: 200px;
@@ -288,7 +304,7 @@ body{
 }
 .tiktok-5:hover{
 
-  background: pink;
+  background: #EE7200;
   scale: 1.1;
 
   
@@ -317,7 +333,7 @@ body{
     height: 150px;
     outline: none;
     border: none;
-    background: wheat;
+    background: rgb(255, 255, 255);
     border-radius: 90px;
     position: relative;
     top: -40px;
@@ -358,15 +374,12 @@ body{
   height: 20px;
   outline: none;
   border: none;
-  background: wheat;
+  background: rgb(255, 255, 255);
   border-radius: 90px;
   position: relative;
   top: -31px;
   left: 66px;
 
- 
-}
-.rotate{
  
 }
 

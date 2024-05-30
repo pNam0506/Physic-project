@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Athiti:wght@200;300;400;500;600;700&family=Bruno+Ace&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylereal.css">
+    <title>เนื้อหา</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">Moment Of Inertia</h1>
+        <div class="img_head" ><img src="image/head_1_real.png" alt=""></div>
+
+        <h2 id="sub-title">นิยามของโมเมนต์เฉื่อย</h2>
+        <h3 id="content-1"> ตำแหน่งของ centroid ของพื้นที่จะหาได้โดยการพิจารณา first moment ของพื้นที่รอบแกนใดแกนหนึ่ง<br> 
+            ซึ่งเป็นการหา integral ที่อยู่ในรูป ∫xdA ในบทนี้ เราจะนิยามคำของ integral ของพื้นที่รอบแกนใดแกนหนึ่ง<br>
+            ซึ่งอยู่ในรูป ∫x^2dA จะถูกเรียกว่า moment of inertia ของพื้นที่ </h3>
+        
+            <div class="image-container">
+                <button class="nav-button" onclick="location.href='page1_1.html'"> Moment of Inertia </button>
+                <button class="nav-button" onclick="location.href='page1_2.html'"> Parallei Axis Theorem for an Area </button>
+                <button class="nav-button" onclick="location.href='page1_3.html'"> Radius of Gyration of an Area </button>
+                <button class="nav-button" onclick="location.href='page1_4.html'"> Moments of Inertia for an Area by integration </button>
+                <button class="nav-button" onclick="location.href='page1_5.html'"> Moments of Inertia for Composite Area </button>
+              </div>
+    </div>
+            <div class="button-container">
+                <button class="back-button" onclick="goBack()"></button>
+            </div>
+    
+    <div class="Vector-l"></div>
+    <div class="Vector-r"></div>
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.getElementById("main-title");
+            const text = header.textContent;
+            header.textContent = "";
+            
+            for (let i = 0; i < text.length; i++) {
+                let span = document.createElement("span");
+                span.textContent = text[i];
+                span.style.animationDelay = `${i * 0.1}s`;
+                header.appendChild(span);
+            }
+        });
+
+
+        function goBack() {
+            window.history.back();
+        }
+
+    </script>
+
+</body>
+</html>

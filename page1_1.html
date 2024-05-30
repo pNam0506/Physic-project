@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Athiti:wght@200;300;400;500;600;700&family=Bruno+Ace&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylereal.css">
+    <title>เนื้อหา</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title"> Moment Of Inertia </h1>
+                
+                <div class="image-container">
+                  <img id="displayedImage1" src="1.png" alt="Displayed Image 1">
+                </div>
+                <div class="image-container">
+                  <img id="displayedImage2" src="2.png" alt="Displayed Image 2">
+                </div>
+                <div class="button-container">
+                  <button class="back-button" onclick="goBack()"></button>
+              </div>
+              <button class="scroll-button scroll-down" onclick="scrollToContent('down')">เลื่อนลง</button>
+              <button class="scroll-button scroll-up" onclick="scrollToContent('up')">เลื่อนขึ้น</button>
+
+                <script>
+                  function showImage(imageSrc1, imageSrc2) {
+                    const imageElement1 = document.getElementById('displayedImage1');
+                    const imageElement2 = document.getElementById('displayedImage2');
+                    imageElement1.src = imageSrc1;
+                    imageElement2.src = imageSrc2;
+                  }
+                  function goBack() {
+                    window.history.back();
+                  }
+                  function scrollToContent(direction) {
+            const scrollAmount = window.innerHeight;
+            const scrollOptions = {
+                top: direction === 'down' ? scrollAmount : -scrollAmount,
+                behavior: 'smooth'
+            };
+            window.scrollBy(scrollOptions);
+        }
+                </script>
+       </div>
+        
+    </div>
+    
+    <div class="Vector-l"></div>
+    <div class="Vector-r"></div>
+
+
+</body>
+</html>

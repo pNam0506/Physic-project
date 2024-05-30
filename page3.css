@@ -1,0 +1,178 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/d.jpeg');
+    background-size: cover;
+    margin: 0; /* ลบ margin เริ่มต้น */  
+    font-family: "Athiti", sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+
+.head{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* กำหนดความสูงของกล่องสีฟ้า */
+    width: 100%;
+    backdrop-filter: blur(10px); /* เบลอพื้นหลัง */
+    
+}
+
+.head .img_head{
+    position: absolute; /* Absolute positioning for image */
+            top: 10%; /* Adjust as necessary */
+            transform: translate(-100%, -50%); /* Center the image */
+            width: 100px; /* Adjust as necessary */
+            height: 100px; /* Adjust as necessary */
+}
+
+.head .img_head:hover{
+    position: absolute; /* Absolute positioning for image */
+            top: 10%; /* Adjust as necessary */
+            transform: translate(-100%, -60%); /* Center the image */
+            width: 100px; /* Adjust as necessary */
+            height: 100px; /* Adjust as necessary */
+            transition: 0.5s;
+}
+
+.head .text{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 1000;
+    font-size: 3em; /* ขนาดตัวอักษร */
+    margin: 0.5em 0; /* เพิ่ม margin เพื่อให้มีพื้นที่ว่าง */
+    margin-top: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: bounce 2s infinite; /* เพิ่ม animation สำหรับการเด้ง */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.head .text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInMove 1s forwards;
+}
+
+@keyframes fadeInMove {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.main{
+    background-color: white;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.line {
+    height: 5px;
+    width: 100%;
+    background-color: #DCDCDC;
+}
+
+.Vector-l{ 
+    position: absolute;
+    width: 541px;
+    height: 468px;
+    left: 937px;
+    top: 132.21px;
+    background: #FFA9A9;
+    filter: blur(200px);
+    transform: rotate(-53.74deg);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.Vector-r{
+    position: absolute;
+    width: 541px;
+    height: 468px;
+    left: -49px;
+    top: 49px;
+    background: #FFA9A9;
+    filter: blur(200px);
+    z-index: -1;
+}
+
+.question {
+    padding-top: 20px;
+}
+
+.bottom {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.bottom button {
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #FFA9A9;
+    color: white;
+    border-radius: 5px;
+    font-family: "Athiti", sans-serif;
+    height: 50px;
+    width: 100px;
+}
+
+.bottom .submit button {
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Athiti", sans-serif;
+    margin-left: 50%;
+    margin-right: 50%;
+    
+}
+
+.bottom .next button {
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Athiti", sans-serif;
+    margin-left: 50%;
+    margin-right: 50%;
+
+}
+
+.back-button {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px; /* เพิ่มความโค้งมนให้กับปุ่ม */
+    background-color: #ffffff; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีของตัวอักษร */
+    background-image: url(image/arrow.png); /* ใส่ URL ของรูปภาพที่ต้องการใช้ */
+    background-size: cover; /* ปรับขนาดรูปภาพให้เท่ากับขนาดของปุ่ม */
+    background-position: center; /* จัดรูปภาพให้อยู่ตรงกลาง */
+    width: 60px; /* กำหนดความกว้างของปุ่ม */
+    height: 60px; /* กำหนดความสูงของปุ่ม */
+    left: 40px; /* กำหนดตำแหน่งที่ต้องการแน่นอน */
+    bottom: 20px; /* กำหนดตำแหน่งที่ต้องการแน่นอน */
+    transition: background-color 0.3s; /* เพิ่มเอฟเฟกต์การเปลี่ยนสีพื้นหลัง */
+    top: 30px;
+}
+
+.back-button:hover {
+    background-color: #6b6b6b; /* สีพื้นหลังปุ่มเมื่อนำเมาส์ไปวาง */
+}
