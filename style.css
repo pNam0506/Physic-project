@@ -398,3 +398,49 @@ a{
 }
 
 
+.Vector-l{ 
+  position: absolute;
+  width: 541px;
+  height: 468px;
+  left: 937px;
+  top: 132.21px;
+  background: #A9F5FF;
+  filter: blur(200px);
+  transform: rotate(-53.74deg);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.Vector-r{
+  position: absolute;
+  width: 541px;
+  height: 468px;
+  left: -49px;
+  top: 49px;
+  background: #A9F5FF;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.Vector-m{
+  position: absolute;
+  width: 541px;
+  height: 468px;
+  left: 50%;
+  top: 700px;
+  background: #CBDD01;
+  filter: blur(200px);
+  z-index: -1;
+  
+}
+
+.Vector-m2{
+  position: absolute;
+  width: 541px;
+  height: 468px;
+  left: 20%;
+  top: 700px;
+  background: #CBDD01;
+  filter: blur(200px);
+  z-index: -1;
+}
