@@ -259,7 +259,15 @@ a{
 }
 
 .tiktok-4 .text-4{
-  transform: rotate(-120deg);}
+  transform: rotate(-120deg);
+  position: relative;
+  top: -20px;
+  right: 25px;
+  font-size: 20px;
+}
+.tiktok-4 .text-4 p{
+  font-size: 13px;
+}
 
 
   .tiktok-4 i{
