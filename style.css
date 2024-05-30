@@ -3,6 +3,9 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    background-image: url('image/d.jpeg');
+    background-size: cover;
+
 
 }
 
@@ -11,13 +14,40 @@ body{
   font-weight: 1000;
   font-size: 3em; /* ขนาดตัวอักษร */
   margin: 0.5em 0; /* เพิ่ม margin เพื่อให้มีพื้นที่ว่าง */
-  margin-left: 40px;
-  display: inline-block;
+  margin-top: 100px;
+  margin-left: 30px;
   white-space: nowrap;
-  overflow: hidden;
   animation: bounce 2s infinite; /* เพิ่ม animation สำหรับการเด้ง */
-  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เงาสีเทา */
 }
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+#main-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInMove 1s forwards;
+}
+
+@keyframes fadeInMove {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
 
 .container{
 
@@ -65,6 +95,7 @@ a{
 }
 .tiktok .text-1{
     transform: rotate(-10deg);
+    font-family: "Athiti", sans-serif;
 }
 .tiktok i{
     position: relative;
@@ -127,7 +158,9 @@ a{
 }
 
 .tiktok-2 .text-2{
-  transform: rotate(10deg);}
+  transform: rotate(10deg);
+  font-family: "Athiti", sans-serif;}
+  
 
 
   .tiktok-2 i{
@@ -201,7 +234,9 @@ a{
 }
 
 .tiktok-3 .text-3{
-  transform: rotate(120deg);}
+  transform: rotate(120deg);
+  font-family: "Athiti", sans-serif;
+}
 
 
   .tiktok-3 i{
@@ -232,10 +267,9 @@ a{
 .tiktok-4 .content-4{
   background: #EE7200;
     position: relative;
-    font-family: "Dancing Script", cursive;
+    font-family: "Athiti", sans-serif;
     font-weight: 1500;
-    font-style: normal;
-    font-size: x-large;
+    font-style: 30px;
     top: -25px;
     width: 200px;
     height: 200px;
@@ -246,6 +280,8 @@ a{
     transition: 300ms cubic-bezier(1, -0.31, 0.02, 1.46);
     clip-path: circle(0% at 0% 10% );
     transition: 0.5s;
+    display: flex;
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
 }
 .tiktok-4:hover{
 
@@ -264,8 +300,10 @@ a{
   top: -20px;
   right: 25px;
   font-size: 20px;
+  
 }
 .tiktok-4 .text-4 p{
+  font-family: "Athiti", sans-serif;
   font-size: 13px;
 }
 
@@ -328,7 +366,9 @@ a{
 }
 
 .tiktok-5 .text-5{
-  transform: rotate(-45deg);}
+  transform: rotate(-45deg);
+  font-family: "Athiti", sans-serif;}
+  
 
 
   .tiktok-5 i{
