@@ -26,6 +26,12 @@ body{
     grid-template-columns: 100px 100px 100px;
 }
 
+i{
+  color: white;
+}
+a{
+  text-decoration: none;
+}
 
 
 .tiktok{
