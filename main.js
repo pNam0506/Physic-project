@@ -89,7 +89,7 @@ function calculateInertia() {
         const r_y = Math.sqrt(I_y / A);  // 
     
         document.getElementById("ans2_1").innerText = `Area = : ${A.toFixed(2)} mm`;
-        document.getElementById("ans2_2").innerHTML = `moment of inertia = : ${I_y.toFixed(2)} mm<sup>4</sup>`;
+        document.getElementById("ans2_2").innerHTML = `Iy = : ${I_y.toFixed(2)} mm<sup>4</sup>`;
     }
     
     function calculate_2(){
